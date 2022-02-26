@@ -1,0 +1,36 @@
+a {
+	colour: blue; /* Noncompliant; colour is not part of the specifications */
+}
+
+// some comment
+a {
+	color: pink;
+}
+
+a {
+	width: 10pixels; /* Noncompliant; "pixels" is not a valid unit */
+}
+
+@keyframes kf {
+	from {
+		margin-top: 50px;
+	}
+	50% {
+		margin-top: 150px !important;
+	} /* Noncompliant; ignored */
+	to {
+		margin-top: 100px;
+	}
+}
+
+a {
+	color: #3c; /* Noncompliant; shorthand should be made of 3 characters */
+}
+div {
+	background-color: #3cb371a; /* Noncompliant; alpha should have 2 characters */
+}
+
+.btn {
+	border: solid black 1px;
+	width: calc(100% 80px); /* Noncompliant */
+}
