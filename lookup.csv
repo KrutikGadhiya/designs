@@ -1,0 +1,4 @@
+id,regex,field
+1,[0-9]*,numbers
+2,[a-zA-Z]*,words
+3,[0-9a-zA_Z]*,alphanum
